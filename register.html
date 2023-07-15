@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Sign Up Page </title>
+</head>
+
+<body>
+    <script>
+        const dbParam = JSON.stringify({ table: "customers", limit: 20 });
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            const myObj = JSON.parse(this.responseText);
+            let text = "<select>"
+            for (let x in myObj) {
+                text += "<option>" + myObj[x].name + "</option>";
+            }
+            text += "</select>"
+            document.getElementById("demo").innerHTML = text;
+        }
+        xmlhttp.open("POST", "json_demo_html_table.php");
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + dbParam);
+    </script>
+    <main>
+        <div>
+            <section class="container">
+                <hr>
+                <h1 class="header">Register</h1>
+                <hr>
+                <p>okay, so create your Account..!</p>
+                <form action="adduser.php" method="post">
+                    <input type="text" class="name" placeholder="First name" name="fname">
+                    <input type="text" class="name" placeholder="Last name" name="lname"><br><br>
+                    <input type="email" class="box" placeholder="email" id="" name="umail"><br>
+                    <input type="text" class="box" placeholder="city" name="ucity"><br>
+                    <input type="text" class="box" placeholder="mobile" name="umobile"><br>
+                    <h4>User type : </h4><select name="utype" id="myselect" onchange="change_myselect(this.value)">
+                        <option name="select" value="">Select</option>
+                        <option name="select" value="exhibitor">Exhibitor</option>
+                        <option name="select" value="visitor">Visitor</option>
+                    </select><br><br>
+                    <p>Please select your Gender</p>
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <h4>Enter your password:</h4>
+                    <input type="password" class="box" placeholder="password" id="password" name="u_password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, 
+                    and at least 8 or more characters" required onkeyup='check();'><br><br>
+
+                    <input type="password" class="box" placeholder="confirm password" id="confirm_password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup='check();'>
+                    <span id='message'></span>
+                    <br><br>
+                    <script>
+                        var check = function () {
+                            if (document.getElementById('password').value ==
+                                document.getElementById('confirm_password').value) {
+                                document.getElementById('message').style.color = 'green';
+                                document.getElementById('message').innerHTML = '✔';
+                            } else {
+                                document.getElementById('message').style.color = 'red';
+                                document.getElementById('message').innerHTML = '✖';
+                            }
+                        }
+                        function myFunction() {
+                            var x = document.getElementById("myCheck").required;
+                        }
+                    </script>
+                    <input type="checkbox" name="test" id="checkboxCheck" required>
+                    <label for="a">I agree to the <span>Terms of use</span> & <span>Privacy
+                            Policy</span></label><br><br>
+                    <input type="reset">
+                    <input type="submit" class="sbutton" placeholder="submit" name="submitbutton"><br><br>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="footer">Already have an account? <a href="login_user.php">Sign in</a> </p>
+    </footer>
+</body>
+
+</html>

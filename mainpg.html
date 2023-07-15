@@ -1,0 +1,164 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        mainpg
+    </title>
+    <link rel="stylesheet" href="dstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .main-section {
+        padding: 70px;
+        text-align: center;
+        background-color: #000000;
+        color: #424242;
+        font-size: large;
+    }
+
+    div.transbox {
+        /* background-color: #ffffff;
+        color: blue; */
+        opacity: 0.2;
+        height: 100%;
+        width: 100%;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<body>
+    <div class="main-section" style=" font-family: Arial, Helvetica, sans-serif;">
+        <p>
+            Search here for exhibition..</p>
+        <form action="/action_page.php">
+            <label for="date" style="font-size:small ;">Select Date : </label>
+            <input type="date" id="date" name="date" placeholder="dd/mm/yyyy">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <a href="login_user.php">  <i class="fa fa-Logout"></i>Logout</a>
+        </div></form>
+    <div class="body">
+    <ul id="time-line">
+            <li>
+                <div>
+                    <p> Fri,23-sun,25 Dec 2022<br>
+                        Fashion Mantra<br>
+                        Ahmedabad<br><br>
+                        <a href="layout1.html"> <button class="blink">Visit </button></a>
+
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Fri,23-sun,25 Dec 2022 <br>
+                        Wed-west <br>
+                        Rajkot <br><br>
+                        <a href="layout2.html"><button class="blink" type="submit">Visit </button></a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Mon,23-Tue,25 Jan 2022 <br>
+                        Wedding bells <br>
+                        Mumbai <br><br>
+                        <a href="layout3.html"><button class="blink" type="submit">Visit </button></a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Wed,26-Thr,27 Dec 2022 <br>
+                        Rangoli <br>
+                        Vadodra <br><br>
+                        <a href="layout4.html"><button class="blink" type="submit">Visit </button></a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Tue,01-Wed,02  2022 <br>
+                        Riwaazz <br>
+                        Udaipur <br><br>
+                        <a href="layout5.html"><button class="blink" type="submit">Visit </button></a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Fri,28-sun,30 Dec 2022 <br>
+                        Sutraa <br>
+                        Nagpur <br><br>
+                        <a href="layout6.html"><button class="blink" type="submit">Visit </button></a>
+                    </p>
+                </div>
+            </li>	
+        </ul>
+    </div>
+    <!-- <div class="column">
+        <div class="transbox">
+            <img src="bg.jpg" style="width:100%">
+        </div>
+        <h3 style="margin-top:-730px;">Upcoming exhibitions...</h3>
+    </div><br><br>
+    <div class="inbox1">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Fri,23-sun,25 Dec 2022
+    Fashion Mantra
+    Ahmedabad</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton"><br><br>
+    </div>
+    <div class="inbox2">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Fri,23-sun,25 Dec 2022
+    Wed-west
+    Rajkot</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton"><br><br>
+    </div>
+    <div class="inbox3">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Mon,23-Tue,25 Jan 2022
+    Wedding bells
+    Mumbai</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton"><br><br>
+    </div>
+    <div class="inbox4">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Wed,26-Thr,27 Dec 2022
+    Rangoli
+    Vadodra</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton"><br><br>
+    </div>
+    <div class="inbox5">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Fri,28-sun,30 Dec 2022
+    Sutraa
+    Nagpur</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton"><br><br>
+    </div>
+    <div class="inbox6">
+        <pre style="color:aliceblue; font-size:x-large; text-align:justify; font-weight: 700;">
+    Tue,01-Wed,02  2022
+    Riwaaz
+    Udaipur</pre>
+    <input type="submit" class="sbutton" placeholder="Visit" name="submitbutton" style="align-self:center;"><br><br>
+    </div> -->
+<script src="dscript.js"></script>
+    
+</body>
+</html>

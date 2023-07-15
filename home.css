@@ -1,0 +1,18 @@
+div.background {
+    background: url(bg.jpg) repeat;
+    height: 100%;
+    width: 100%;
+    }
+    div.transbox {
+    
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    }
+    div.transbox p {
+    
+    
+    font-weight: bold;
+    color: #0000;
+    }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });  
+    </script>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(3, 3, 3);
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #fcfffe;
+            color: rgb(0, 0, 0);
+        }
+
+        #panel,
+        #flip {
+            padding: 50px;
+            text-align: center;
+            font-size: x-large;
+            background-color: #8f9393;
+            border: solid 1px #070707;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="contactus.html">Contact</a>
+        <a href="aboutus.html">About</a>
+        <a href="register.html">Sign up</a>
+        <a class="active" href="gallery.html">Gallery</a>
+      </div>
+    <div id="flip">Gallary</div>
+    <div id="panel"><img src="sutraa.jpg" alt="">
+        <img src="rangoli.jpg" alt="">
+        <img src="fashionmantra.png" alt="">
+        <img src="Riwazz.jpg" alt="">
+        <img src="wed west.jpg" alt="">
+        <img src="weddingbells.jpg" alt="">
+        <img src="bg.jpg" alt="">
+        <img src="Oeb white logo.png" alt="">
+        <img src="12.jpg" alt="">
+        <img src="ex1.jpg" alt="">
+        <img src="ex2.jpg" alt="">
+        <img src="ex3.jpg" alt="">
+        <img src="ex4.jpg" alt="">
+        <img src="ex5.jpg" alt="">
+        <img src="ex6.jpg" alt="">
+        <img src="ex7.jpg" alt="">
+        <img src="ex8.jpg" alt="">
+        <img src="ex9.jpg" alt="">
+        <img src="ex10.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <span style='font-size:50px; color: #f2f2f2; padding-left: 750px;'>&#8593;</span>
+    <h2 style="color:#ddd; text-align: center;" >Click "Gallery" for Exhibition images </h2>
+
+</body>
+
+</html>

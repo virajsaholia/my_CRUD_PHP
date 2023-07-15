@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+*{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+body{
+    background: #0f0f0f;   
+background: linear-gradient(to right, #565555, #474646); 
+
+}
+table{
+ position: relative;
+ margin:10% 20% 0 12%;
+ width: 60%;
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 12px;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 15px 20px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: rgb(58, 58, 58);
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ color:#fff;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #272829;
+}
+tr:nth-child(odd){
+    background-color: #272829;
+}
+.credit a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    }
+    
+    .credit {
+        text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    form {
+        background-color: #4654e1;
+        width: 300px;
+        height: 44px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      input {
+        all: unset;
+        font: 16px system-ui;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+      }
+      
+      ::placeholder {
+        color: #fff;
+        opacity: 0.7; 
+      }
+      
+      button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+      }
+      
+      svg {
+        color: #fff;
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+      }
